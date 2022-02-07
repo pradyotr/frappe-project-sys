@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{project_id}-T-{####}",
+ "creation": "2022-02-03 13:18:07.655103",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_title",
+  "task_id",
+  "project_id",
+  "task_start_date",
+  "task_end_date",
+  "status",
+  "assignee"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Data",
+   "label": "Task ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Project"
+  },
+  {
+   "fieldname": "task_start_date",
+   "fieldtype": "Date",
+   "label": "Task Start Date"
+  },
+  {
+   "fieldname": "task_end_date",
+   "fieldtype": "Date",
+   "label": "Task End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nWIP\nUnder QA\nCompleted"
+  },
+  {
+   "fieldname": "assignee",
+   "fieldtype": "Data",
+   "label": "Assignee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-04 11:20:10.820011",
+ "modified_by": "Administrator",
+ "module": "Project System",
+ "name": "Project Task",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Project Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Developer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "QA",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
